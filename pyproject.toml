@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "twinoid-forum-archive"
+version = "0.1.0"
+description = "Static archive of Twinoid forums"
+authors = ["Charles-Meldhine Madi Mnemoi <icdk5b4zf@relay.firefox.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11, <3.12"
+streamlit = "^1.28.0"
+fastapi = "^0.104.1"
+uvicorn = "^0.23.2"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.10.1"
+mypy = "^1.6.1"
+pylint = "^3.0.2"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
